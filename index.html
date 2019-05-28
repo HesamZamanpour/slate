@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;json&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -211,10 +211,7 @@
     <div class="toc-wrapper">
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="json">json</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -226,18 +223,78 @@
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#login" class="toc-h2 toc-link" data-title="login">login</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#logout" class="toc-h2 toc-link" data-title="logout">logout</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#admin" class="toc-h1 toc-link" data-title="Admin">Admin</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-users" class="toc-h2 toc-link" data-title="Get All Users">Get All Users</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#add-a-new-user" class="toc-h2 toc-link" data-title="Add a New User">Add a New User</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-user" class="toc-h2 toc-link" data-title="Get a Specific User">Get a Specific User</a>
+                  </li>
+                  <li>
+                    <a href="#edit-a-specific-user" class="toc-h2 toc-link" data-title="Edit a Specific User">Edit a Specific User</a>
+                  </li>
+                  <li>
+                    <a href="#get-all-tasks" class="toc-h2 toc-link" data-title="Get All Tasks">Get All Tasks</a>
+                  </li>
+                  <li>
+                    <a href="#add-a-new-task" class="toc-h2 toc-link" data-title="Add a New Task">Add a New Task</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-task" class="toc-h2 toc-link" data-title="Get a Specific Task">Get a Specific Task</a>
+                  </li>
+                  <li>
+                    <a href="#edit-a-specific-task" class="toc-h2 toc-link" data-title="Edit a Specific Task">Edit a Specific Task</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-specific-task" class="toc-h2 toc-link" data-title="Delete a Specific Task">Delete a Specific Task</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#manager" class="toc-h1 toc-link" data-title="Manager">Manager</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-of-tasks" class="toc-h2 toc-link" data-title="Get All of Tasks">Get All of Tasks</a>
+                  </li>
+                  <li>
+                    <a href="#add-a-subtask" class="toc-h2 toc-link" data-title="Add a SubTask">Add a SubTask</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-task-2" class="toc-h2 toc-link" data-title="Get a Specific Task">Get a Specific Task</a>
+                  </li>
+                  <li>
+                    <a href="#edit-a-specific-task-2" class="toc-h2 toc-link" data-title="Edit a Specific Task">Edit a Specific Task</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-specific-task-2" class="toc-h2 toc-link" data-title="Delete a Specific Task">Delete a Specific Task</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#performer" class="toc-h1 toc-link" data-title="Performer">Performer</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-of-tasks-2" class="toc-h2 toc-link" data-title="Get All of Tasks">Get All of Tasks</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-task-3" class="toc-h2 toc-link" data-title="Get a Specific Task">Get a Specific Task</a>
+                  </li>
+                  <li>
+                    <a href="#do-a-specific-task" class="toc-h2 toc-link" data-title="Do a Specific Task">Do a Specific Task</a>
                   </li>
               </ul>
           </li>
@@ -246,20 +303,20 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://futechgroup.ir'>Documentation Powered by FutechGroup</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>teeeeessssst
+Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 
 <p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
 <p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
+<h1 id='authentication'>Authentication</h1><h2 id='login'>login</h2><h2 id='logout'>logout</h2><h3 id='white'>white</h3><h3 id='black'>black</h3>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
@@ -289,7 +346,38 @@ curl <span class="s2">"api_endpoint_here"</span>
 <aside class="notice">
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id='admin'>Admin</h1><h2 id='get-all-users'>Get All Users</h2>
+<p>hay</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET http://example.com/api/kittens</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>include_cats</td>
+<td>false</td>
+<td>If set to true, the result will also include cats.</td>
+</tr>
+<tr>
+<td>available</td>
+<td>true</td>
+<td>If set to false, the result will include kittens that have already been adopted.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+<h3 id='data-params'>Data Params</h3><pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"username"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"password"</span><span class="p">:</span><span class="w"> </span><span class="s2">"password"</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='success-response'>Success Response</h3><h4 id='code'>Code :</h4><h4 id='content'>Content:</h4><h3 id='error-response'>Error Response</h3><h3 id='notes'>Notes</h3><h2 id='add-a-new-user'>Add a New User</h2><h2 id='get-a-specific-user'>Get a Specific User</h2><h2 id='edit-a-specific-user'>Edit a Specific User</h2><h2 id='get-all-tasks'>Get All Tasks</h2><h2 id='add-a-new-task'>Add a New Task</h2><h2 id='get-a-specific-task'>Get a Specific Task</h2><h2 id='edit-a-specific-task'>Edit a Specific Task</h2><h2 id='delete-a-specific-task'>Delete a Specific Task</h2><h1 id='manager'>Manager</h1><h2 id='get-all-of-tasks'>Get All of Tasks</h2><h2 id='add-a-subtask'>Add a SubTask</h2><h2 id='get-a-specific-task-2'>Get a Specific Task</h2><h2 id='edit-a-specific-task-2'>Edit a Specific Task</h2><h2 id='delete-a-specific-task-2'>Delete a Specific Task</h2><h1 id='performer'>Performer</h1><h2 id='get-all-of-tasks-2'>Get All of Tasks</h2><h2 id='get-a-specific-task-3'>Get a Specific Task</h2><h2 id='do-a-specific-task'>Do a Specific Task</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
@@ -325,32 +413,7 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
 <p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -393,7 +456,7 @@ Remember — a happy kitten is an authenticated kitten!
 <td>The ID of the kitten to retrieve</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -433,11 +496,7 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </tbody></table>
 <h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
+<p>The TaskManager API uses the following error codes:</p>
 
 <table><thead>
 <tr>
@@ -494,10 +553,7 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="json">json</a>
           </div>
       </div>
     </div>
