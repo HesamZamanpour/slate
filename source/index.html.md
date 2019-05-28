@@ -2,14 +2,11 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+  - json
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
+
+  - <a href='https://futechgroup.ir'>Documentation Powered by FutechGroup</a>
 
 includes:
   - errors
@@ -29,7 +26,10 @@ We have language bindings in Shell, Ruby, Python, and JavaScript! You can view c
 This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
 # Authentication
-
+##login
+##logout
+###white
+###black
 > To authorize, use this code:
 
 ```ruby
@@ -68,9 +68,57 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Admin
 
-## Get All Kittens
+## Get All Users
+hay
+### HTTP Request
+
+`GET http://example.com/api/kittens`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include kittens that have already been adopted.
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+### Data Params
+```json
+  {
+    "username": "username",
+    "password": "password",
+  }
+```
+### Success Response
+#### Code : 
+#### Content:
+### Error Response
+### Notes
+## Add a New User
+## Get a Specific User
+## Edit a Specific User
+## Get All Tasks
+## Add a New Task
+## Get a Specific Task
+## Edit a Specific Task
+## Delete a Specific Task
+
+# Manager
+## Get All of Tasks
+## Add a SubTask
+## Get a Specific Task
+## Edit a Specific Task
+## Delete a Specific Task
+
+
+# Performer
+## Get All of Tasks
+## Get a Specific Task
+## Do a Specific Task
 
 ```ruby
 require 'kittn'
@@ -121,22 +169,7 @@ let kittens = api.kittens.get();
 
 This endpoint retrieves all kittens.
 
-### HTTP Request
 
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
 
 ```ruby
 require 'kittn'
@@ -190,7 +223,7 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
 
-## Delete a Specific Kitten
+
 
 ```ruby
 require 'kittn'
